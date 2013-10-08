@@ -1,0 +1,45 @@
+<!--
+/* Copyright 2013 Intelligent Technology Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Udon Advisor</title>
+    <link href="index.css" rel="stylesheet">
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+	<div id='container'>
+		<div id="container-news" class="selected">
+		    <webview id="webview-news" style="width:900px;height:500px" autosize="on"
+		    	src="https://www.google.co.jp/#q=%E3%81%86%E3%81%A9%E3%82%93&tbm=nws"></webview>
+		</div>
+		<div id="container-search" class="hidden">
+			<div class="text-input-area">
+				<input type="text" id="text-search" value="" />
+				<div id="button-search" class="button">UDON SEARCH</div>
+			</div>
+		    <webview id="webview-search" style="width:900px;height:440px" autosize="on"
+		    	src=""></webview>
+		</div>
+	</div>
+	<div id='menu'>
+		<div id="menu-news" class='menu-item selected'>NEWS</div>
+		<div id="menu-search" class='menu-item'>SEARCH</div>
+	</div>
+</body>
+</html>
